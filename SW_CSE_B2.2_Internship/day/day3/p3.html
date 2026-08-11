@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html forms 3</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <!--fieldset lets us group related form controls together-->
+            <legend>Personal information</legend>
+            <p>
+                <input type="text" name="fullname" id="fullname" placeholder="enter fullname*" required 
+                minlength="3" maxlength="10">
+            </p>
+            <p>
+                <input type="email" name="email" id="email" placeholder="enter email*" required>
+            </p>
+            <p>
+                <input type="password" name="password" id="password" placeholder="enter password*"required
+                minlength="8">
+            </p>
+            <p>
+                <input type="tel" name="phone" id="phone"
+                pattern="[0-9]{10}"
+                title="enter mobile number"
+                placeholder="mobile number"
+                required>
+            </p>
+            <p>
+                <input type="number" name="age" id="age" placeholder="enter age" min="1" max="100">
+            </p>
+            <p>
+                <input type="date" id="dob" min="1990-01-01" max="2026-01-01">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>prefernces</legend>
+            <p>gender:
+            </p>
+            <p>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">female</label>
+            </p>
+            <p>
+                skills:
+            </p>
+            <p>
+                <input type="checkbox" name="skills" id="html" value="html">
+                <label for="html">html</label>
+                <input type="checkbox" name="skills" id="css" value="html">
+                <label for="html">html</label>
+                <input type="checkbox" name="skills" id="html" value="html">
+                <label for="html">html</label>
+                <input type="checkbox" name="skills" id="html" value="html">
+                <label for="html">html</label>
+                <input type="checkbox" name="skills" id="html" value="html">
+                <label for="html">html</label>
+            </p>
+            <p>
+                <label for="country">country:</label><br>
+                <select name="country" id="country">
+                    <option value="">select your country</option>
+                    <option value="india">india</option>
+                    <option value="nepal">nepal</option>
+                    
+                </select>
+
+            </p>
+            <p>
+                <fieldset>
+                    <input type="textarea" row="4" cols="50">
+                </fieldset> 
+            </p>
+
+
+
+        </fieldset>
+        <p>
+            <button type="submit">submit</button>
+            <button type="reset">reset</button>
+
+            </button>
+        </p>
+    </form>
+    <form action="" novalidate>
+        <input type="text" name="" id="" placeholder="enter name">
+    </form>
+</body>
+</html>
+<!--vadidation can be done in 2 ways:
+client side validation and server side validation-->
