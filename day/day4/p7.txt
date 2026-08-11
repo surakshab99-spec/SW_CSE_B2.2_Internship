@@ -1,0 +1,13 @@
+type selectors
+class
+id selectorsuniversal selectors
+grouping selectors
+element selectors
+descendent selectors
+child selector:ul-->li if we apply style tag on ul then it automatically gets applied on li tag too
+sibling selectors: tag next to each other
+attribute selector
+Pseudo class selector
+Pseudo element selector
+
+

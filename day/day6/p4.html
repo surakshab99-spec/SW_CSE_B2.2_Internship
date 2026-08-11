@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variable</title>
+    <style>
+         :root{
+            --primary-color:red;
+            --spacing:16px;
+            --border-radius:6px;
+        }
+        button{
+            background-color:var(--primary-color);
+            padding:var(--spacing);
+            border-radius:var(--border-radius);
+        }
+    </style>
+</head>
+<body>
+    <p>vss variables:custom properties,lets us store reusable css:colors,spacing between lines,font sizes,shadows,animations settings
+    basic syntax:
+        :root{
+            --primary-color:red;
+            --spacing:16px;
+            --border-radius:6px;
+            --secondary-color:orange;
+
+        }
+        button{
+            background-color:var(--primary-color);
+            padding:var(--spacing);
+            border-radius:var(--border-radius);
+        }
+        a{
+           color:var(--secondary-color);
+        }
+        
+    </p>
+    <button>click me</button>
+    <a href="">explore more</a>
+</body>
+</html>
