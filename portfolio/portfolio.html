@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio | Rakesh K R</title>
+
+</head>
+<style>
+    .navbar{
+            display:flex;
+            flex-direction:row;
+            background-color:#4F796C ;
+            color: white;                                                                                                                                                                                                                                           
+            padding:16px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size:18px;
+            margin-top: 20px;
+            justify-content:center;
+            gap:32px;
+            font-weight:600;
+            text-align:center;
+
+    }
+    navbar a{
+        font-weight:600;
+        text-transform:uppercase;
+        letter-spacing:0.25em;
+        
+        
+    }
+    body{
+            
+            background-color:#F7F6F2;
+            color: #3C4A57;;
+            line-height: 1.6;
+
+    }
+    a {
+            
+            color: white;
+            transition: all 0.3s ease;
+            padding:50px;
+            justify-content:space-evenly;
+            align-items:center;
+
+        }
+    header{
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 120px;
+            background-color:white;
+    }
+    header h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color:black;
+            font-family:cursive;
+        
+        }
+
+    }
+    header h2{
+            font-size:100px;
+            max-width: 600px;
+            margin-bottom: 32px;
+            font-weight:700;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+    header a{
+            display:inline-block;
+            background-color:#4F796C;
+            color:white;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding:10px;
+            border-radius: 8px;
+            font-weight: 900;
+            font-size:25px;
+            width: 220px;
+            text-align: center;
+            cursor: pointer;
+            transition:background-color 1.3 ease out;
+            
+            
+        }
+    header a:hover{
+        transform:translateY(-3px);
+    }    
+        section{
+            padding:20px;
+            display:flex;
+            flex-direction:column;
+        }
+        #about h2{
+            font-size:30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color:black;
+            
+        }
+        #about p{
+            display:flex;
+            transform:translate(350px,-250px);
+            font-size:20px;
+            font-family:cursive;
+            height:100px;
+            width:800px;
+        
+            
+
+        }#skills{
+            background-color:#FFFFFF;
+        }
+        #skills ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-top: 24px;
+            transform:translate(20PX,-25PX);
+        }
+        #skills h2{
+            font-size:30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color:black;
+        }
+
+        #skills li {
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background-color: #1e293b;
+            color: #f1f5f9;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+
+            
+        }
+        #skills li:hover{
+            background-color:#0284c7;
+            transform: translateY(-3px);
+            background-color: #334155;
+        }
+        #skills h2{
+            font-size:30px;
+
+        }
+        #contact{
+            background-color:#EEF2F5;
+        }
+        #contact p{
+            text-align:center;
+            font-size:35px;
+            font-family:sans-serif;
+        }
+        #contact h2{
+            font-size:30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color:black;
+        }
+        .container{
+            display:flex;
+            border:2px solid black;
+            padding:20px;
+            font-size:32px;
+            flex-direction:column;
+            border-radius:20px;
+
+            
+            
+        }
+        input, select, textarea {
+        height:25px;
+        width:250px;
+            border: 1px solid #334155;
+            border-radius: 6px;
+            color: #ffffff;
+            font-size: 1rem;
+            font-family: inherit;
+            outline: none;
+            transition: border-color 0.3s ease;
+            
+        }
+        button[type="submit"] {
+            background:#4F796C;
+            color: #ffffff;
+            padding: 14px 24px;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-tOP:2PX;
+        }
+        footer{
+            text-align:center;
+            font-size:20px;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        }
+        #about  img{
+            border:2px solid blue;
+            height:250px;
+            width:200px;
+            transform:translateX(100px);
+            border-radius:500px;
+
+
+        }
+        #projects{
+            background-color:#ffffff;
+        }
+        #projects h2{
+            font-size:30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color:black;
+
+        }
+        #projects p{
+            font-size:20px;
+            font-family:sans-serif
+        }
+            .project-card {
+            background-color:beige;
+            border-radius: 12px;
+            padding:16px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-top: 24px;
+            color:black;
+        }
+
+        .project-card h3 {
+            font-size: 1.4rem;
+            color:black;
+            margin-bottom:20px;
+        }
+
+        .project-card p {
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        .project-card a {
+            display: inline-block;
+            COLOR:BLUE;
+            font-weight: 600;
+            font-size:20px;
+        }
+
+        .project-card a:hover {
+            text-decoration: underline;
+        }
+
+        
+
+</style>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <div class="navbar">
+    <nav>
+
+        <a href="#about" class="a1">About</a>
+
+        <a href="#skills"class="a1">Skills</a>
+
+        <a href="#projects" class="a1">Projects</a>
+
+        <a href="#contact " class="a1">Contact</a>
+
+    </nav>
+    </div>
+    <!-- HERO SECTION -->
+
+    <header>
+
+        <h1>Hi, I'm Suraksha!!</h1>
+
+        <h2>I'm a passionate web developer from Belagavi.</h2>
+
+        <a href="#contact">Hire Me</a>
+
+    </header>
+
+    <!-- ABOUT SECTION -->
+
+    <section id="about">
+     
+        <h2>About Me</h2>
+
+        <img src="prfp.jpeg" alt="Profile photo of suraksha" width="200">
+
+        <p>"I am a Web Developer and Student based in Belagavi with a passion for building clean, performant, and user-friendly digital experiences. Skilled in HTML, CSS, JavaScript, Python, and React, I enjoy taking complex problems and turning them into intuitive web applications. Whether crafting responsive front-end interfaces or exploring algorithmic logic, I am always eager to learn new technologies and refine my craft."
+            
+        </p>
+
+    </section>
+    <!-- SKILLS SECTION -->
+
+    <section id="skills">
+
+        <h2>My Skills</h2>
+
+        <ul>
+
+            <li>HTML5</li>
+
+            <li>CSS3</li>
+
+            <li>JavaScript</li>
+
+            <li>React</li>
+
+        </ul>
+
+    </section>
+
+    <!-- PROJECTS SECTION -->
+
+    <section id="projects">
+
+        <h2>My Projects</h2>
+
+        <div class="project-card">
+
+            <h3></h3>
+
+            <h3>Description of project :</h3>
+            <p>Description: An interactive web visualizer designed to demonstrate core computer science algorithms in real time. Users can control speed, array sizes, and step through algorithms such as Quick Sort, Merge Sort, and Dijkstra's algorithm to see how memory and execution flow work under the hood.</p>
+
+            <p>Key Skills: JavaScript / Python, HTML5 Canvas / DOM Manipulation, CSS Animations, Data Structures & Algorithms.</p>
+
+            <h3>Sample Project Links:</h3>
+            <a href="github.com/TylerMommsen/sorting-visualizer">GITHUB LINK</a>
+            <a href="<a href="github.com/TylerMommsen/sorting-visualizer">LIVE DEMO <LINK:manifest></LINK:manifest></a>
+"
+           
+
+            
+
+        </div>
+
+    </section>
+    <!-- CONTACT SECTION -->
+
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <p>Have a project in mind? Let's talk!</p>
+
+        
+        <div class="container">
+        <form action="#" method="POST">
+
+            <label for="name">Your Name</label>
+
+            <input type="text" id="name" name="name"  placeholder="Enter your name" required><br>
+
+            
+
+            <label for="email">Your Email</label>
+
+            <input type="email" id="email" name="email"  placeholder="Enter your email" required><br>
+            <label for="subject">Subject</label>
+
+            <select id="subject" name="subject">
+
+                <option value="">-- Select a topic --</option>
+
+                <option value="hire">I want to hire you</option>
+
+                <option value="collab">I want to collaborate</option>
+
+                <option value="other">Other</option>
+
+            </select><br>
+
+            
+
+            <label for="message">Message</label>
+
+            <textarea id="message" name="message" rows="5"  placeholder="Tell me about your project..."
+                required></textarea><br>
+
+            
+
+            <button type="submit">Send Message 🚀</button>
+
+        </form>
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>&copy; 2025 Suraksha Bhosale. All rights reserved.</p>
+
+    </footer>
+
+
+</body>
+
+</html>
