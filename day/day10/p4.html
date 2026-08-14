@@ -11,12 +11,20 @@
     <p id="it"> innertext</p>  
     <!--innerhtml-->
     <p id="ih">innerhtml</p>
+    <button id="changebtn">click for change</button>
+    <form class="form1">
+        <input type="text">name</input>
+        <input type="email">email</input>
+
+    </form>
+    <button id="submit">submit</button>
     
     <script>
         //textcontent:used when working with the plain text:does not consider html tag
        const tce= document.getElementById("tc");
        console.log(tce.textContent);
        tce.textContent= "suraksha";
+       
        //innertext:when we work with visible text on the page
        const ite=document.getElementById("it");
        console.log(ite.innerText);
@@ -24,7 +32,23 @@
        //innerhtml:read or set html inside an element
        const ihe=document.getElementById("ih");
        console.log(ihe.innerHTML);
-       ihe.innerHTML="<strong><i>innerhtml</i>  innertext changed via html</strong>";    
+       ihe.innerHTML="<strong><i>innerhtml</i>  innertext changed via html</strong>";   
+       
+       //button change
+       const changebtne= document.getElementById("changebtn");
+       changebtn.addEventListener("click",function(){
+        tce.textContent= "suraksha";
+        ihe.innerHTML="<strong><i>innerhtml</i>  innertext changed via html.after button clicked</strong>";   
+        ite.innerText="innertext changed via JS.after button clicked";
+
+       })
+       const form3=document.getElementsByClassName("form1");
+       console.log(form3);
+       
+       const btn=document.getElementById("submit");
+       btn.addEventListener("click",function(){
+        btn.textContent="submitted";
+       })
        </script>
     
 </body>
