@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readind and changing content</title>
+</head>
+<body>
+    <p id="tc">Hello</p>
+    <!--innertext-->
+    <p id="it"> innertext</p>  
+    <!--innerhtml-->
+    <p id="ih">innerhtml</p>
+    
+    <script>
+        //textcontent:used when working with the plain text:does not consider html tag
+       const tce= document.getElementById("tc");
+       console.log(tce.textContent);
+       tce.textContent= "suraksha";
+       //innertext:when we work with visible text on the page
+       const ite=document.getElementById("it");
+       console.log(ite.innerText);
+       ite.innerText="innertext changed via JS";
+       //innerhtml:read or set html inside an element
+       const ihe=document.getElementById("ih");
+       console.log(ihe.innerHTML);
+       ihe.innerHTML="<strong><i>innerhtml</i>  innertext changed via html</strong>";    
+       </script>
+    
+</body>
+</html>
