@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>working with attributes</title>
+</head>
+<body><img src="prfp.jpeg" alt="">
+    <!--get arttribute and setattribute-->
+    <script>
+        const img=document.querySelector("img");
+        //read attribute
+        const src=img.getAttribute("src");
+
+        //setattribute
+        img.setAttribute("alt","image of smriti");
+        img.setAttribute("src","img.jpg");
+
+        // removeAttribute and hasAttribute
+        const input = document.querySelector("input");
+        console.log(input.hasAttribute("disabled"));
+        input.removeAttribute("disabled");
+
+    </script>
+
+
+    
+</body>
+</html>
