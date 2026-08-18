@@ -1,10 +1,14 @@
-
-
+import { Welcome} from "./components/p1.jsx";
+import greet from "./components/p2.jsx";
+<components></components>
 function App() {
   
   return(
-    <h1>my first recat app</h1>
-  )
+     <div>
+      <welcome/>
+      <greet/>
+     </div>
+  );
   }
   
 
