@@ -1,8 +1,8 @@
-export default function greet(){
+export default function Greet() {
     return(
         <>
-        <h6>hello my name is suraksha</h6>
-        <p>i am learning react</p>
+            <h6>Hello my name is Rakesh</h6>
+            <p>I'm learning React JS now.</p>
         </>
     )
 }

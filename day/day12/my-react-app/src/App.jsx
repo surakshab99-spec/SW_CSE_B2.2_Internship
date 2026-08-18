@@ -1,15 +1,14 @@
-import { Welcome} from "./components/p1.jsx";
-import greet from "./components/p2.jsx";
-<components></components>
+import { Welcome } from "./components/P1.jsx";
+import Greet from "./components/P2.jsx";
+import { MyMovies } from "./components/P3";
 function App() {
-  
-  return(
-     <div>
-      <welcome/>
-      <greet/>
-     </div>
+  return (
+    <div>
+        <Welcome />
+        <Greet />
+        <MyMovies />
+    </div>
   );
-  }
-  
+}
 
-export default App
+export default App;
