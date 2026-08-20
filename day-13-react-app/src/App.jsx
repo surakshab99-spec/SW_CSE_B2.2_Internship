@@ -4,11 +4,13 @@ import { ProductCard } from "./components/p2";
 import ButtonDemo from "./components/p3";
 import Counter from "./components/stateexample1";
 import ToggleText from"./components/state2";
+import NameInput from "./components/state3";
 import "./App.css";
 
 function App() {
-  return (
-    <>
+  return(
+<>
+      <NameInput/>
       <Counter />
       <ToggleText/>
       
